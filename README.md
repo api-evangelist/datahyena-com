@@ -64,33 +64,21 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Datahyena provides a focused company‑event signal API delivering clean, structured data on funding rounds, acquisitions, executive moves, and hiring signals. Over 100,000 companies and 50,000+ funding events are covered, with REST endpoints, webhooks, and MCP support. The service offers credit‑based pricing, a free tier, and extensive documentation for developers and sales teams.
+Datahyena provides a REST API delivering real-time funding rounds, acquisitions, executive moves, and hiring signals for companies worldwide. The service aggregates, deduplicates, and resolves events into a clean, queryable dataset refreshed hourly, offering 50 free credits without requiring a credit card. It supports cursor‑based pagination and returns results in a single envelope.
 
-**Areas:** Company · Data · Funding · M&A · Hiring · API
+**Areas:** Company · Funding · Acquisitions · Executive-Moves · Hiring · API
 
 ## datahyena-com on APIs.io
 
 Everything profiled for datahyena-com is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/datahyena-com/](https://apis.io/providers/datahyena-com/)** — or go straight to one of the APIs or properties below.
 
-### APIs (7)
+### APIs (1)
 
-- [Datahyena Public API](https://apis.io/apis/datahyena-com/datahyena-public-api/) — Public API providing funding, acquisition, executive move, and hiring signals.
-- [datahyena-com Acquisitions API](https://apis.io/apis/datahyena-com/datahyena-com-acquisitions-api/) — Acquisition and merger signals with acquirer, target, amount, and source context.
-- [datahyena-com Companies API](https://apis.io/apis/datahyena-com/datahyena-com-companies-api/) — Company directory records with search and firmographic filters.
-- [datahyena-com Exec Moves API](https://apis.io/apis/datahyena-com/datahyena-com-exec-moves-api/) — Executive job-change signals across tracked companies and people.
-- [datahyena-com Funding Events API](https://apis.io/apis/datahyena-com/datahyena-com-funding-events-api/) — Funding rounds with company, investors, amount, round, and source context.
-- [datahyena-com Hiring Signals API](https://apis.io/apis/datahyena-com/datahyena-com-hiring-signals-api/) — Hiring signals from company job boards: leadership openings, founding roles, team scaling, technology hiring (beta) and hard-to-fill roles, plus each…
-- [datahyena-com Investors API](https://apis.io/apis/datahyena-com/datahyena-com-investors-api/) — Investor directory records with search, type, country, and domain filters.
+- [Datahyena Public API](https://apis.io/apis/datahyena-com/datahyena-public-api/) — Public API endpoints exposed by Datahyena.
 
 ### Published properties
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
-
-#### AsyncAPI (1)
-
-Event-driven and webhook contracts.
-
-- [Datahyena Com Webhooks](https://apis.io/asyncapis/datahyena-com/datahyena-com-webhooks/)
 
 #### Agentic access (1)
 
@@ -98,11 +86,28 @@ Which operations an agent can call, which act, and which need a human in the loo
 
 - [Datahyena Com Agentic Access](https://apis.io/agentic-access/datahyena-com/datahyena-com-agentic-access/)
 
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [HiringProfileDto](https://apis.io/schemas/datahyena-com/datahyena-com-hiring-profile-dto/)
+- [PublicAcquisitionEventResponseItem](https://apis.io/schemas/datahyena-com/datahyena-com-public-acquisition-event-response-item/)
+- [PublicCompanyDto](https://apis.io/schemas/datahyena-com/datahyena-com-public-company-dto/)
+- [PublicFundingEventResponseItem](https://apis.io/schemas/datahyena-com/datahyena-com-public-funding-event-response-item/)
+- [PublicHiringSignalResponseItem](https://apis.io/schemas/datahyena-com/datahyena-com-public-hiring-signal-response-item/)
+- [PublicInvestorResponseItem](https://apis.io/schemas/datahyena-com/datahyena-com-public-investor-response-item/)
+
 #### JSON-LD (1)
 
 Linked-data contexts for the provider's vocabulary.
 
 - [Datahyena Com Context](https://apis.io/jsonld/datahyena-com/datahyena-com-context/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Datahyena Com Openapi Overlay](https://apis.io/overlays/datahyena-com/datahyena-com-openapi-overlay/)
 
 #### Governance rules (1)
 
@@ -116,6 +121,12 @@ Authentication, trust centre, and vulnerability disclosure.
 
 - [Datahyena Com Authentication](https://apis.io/security/datahyena-com/datahyena-com-authentication/)
 - [Datahyena Com Domain Security](https://apis.io/security/datahyena-com/datahyena-com-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Datahyena Com Scopes](https://apis.io/scopes/datahyena-com/datahyena-com-scopes/)
 
 #### Plans and pricing (1)
 
@@ -134,28 +145,31 @@ Published request limits.
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://datahyena.com/)
-- [Documentation](https://datahyena.com/docs/)
-- [Getting started](https://datahyena.com/docs/guides/quick-start)
-- [API reference](https://datahyena.com/docs/api-reference/)
+- [Documentation](https://datahyena.com/api/)
+- [Getting started](https://datahyena.com/demo/)
+- [API reference](https://datahyena.com/api/)
 - [Pricing](https://datahyena.com/pricing/)
+- [Sign up](https://app.datahyena.com/register)
+- [Support](https://datahyena.com/contact/)
 - [Blog](https://datahyena.com/blog/)
 - [Terms of service](https://datahyena.com/terms/)
 - [Privacy policy](https://datahyena.com/privacy/)
+- [Status](https://status.datahyena.com)
 
 ## API Evangelist rating
 
-**Kin Score 58.7** — strong · rubric 0.25.0 · scored 2026-10-30
+**Kin Score 66.8** — exemplar · rubric 0.25.0 · scored 2026-10-30
 
 | Facet | Score |
 |---|---|
-| Discoverability | 65.0 |
-| Contract quality | 63.8 |
+| Discoverability | 56.7 |
+| Contract quality | 62.6 |
 | Contract governance | 79.1 |
-| Operational transparency | 26.8 |
-| Developer ergonomics | 49.3 |
-| Access clarity | 60.0 |
+| Operational transparency | 44.2 |
+| Developer ergonomics | 63.6 |
+| Access clarity | 73.2 |
 
-**Agent readiness 66.5** — agent-ready (gated down from agent-native)
+**Agent readiness 62.8** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
@@ -168,7 +182,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Error Semantics | verified |
 | OpenAPI Examples | verified |
 | Rate Limit Signal | documented (partial credit) |
-| Event Surface Described | unknown |
+| Event Surface Described | — |
 | Agent Skills | unknown |
 | Well Known Catalog | yes |
 | Consent Identity | — |
@@ -181,7 +195,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Pagination Ratio | paginated |
 | Operation Distinctiveness | distinct |
 
-**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 34.3** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/datahyena-com/](https://apis.io/providers/datahyena-com/).
 
